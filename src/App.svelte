@@ -6,6 +6,7 @@
   import PetHealth from './pages/Pet_Health_Plan.svelte';
   import EnquiriesAppointments from './pages/enquiries_appointments.svelte';
   import Service from './pages/services.svelte';
+  import Home from './pages/Home.svelte'
   import NotFound from './NotFound.svelte';
 
   import {Router, Route, Link} from 'svelte-navigator';
@@ -53,6 +54,9 @@
         <li class="nav-item">
           <Link class="nav-link" to="contact">contact</Link>
         </li>
+        <li class="nav-item">
+          <Link class="nav-link" to="acceuil">Acceuil</Link>
+        </li>
         <!-- <li class="nav-item active">
 	<Link to="login">login</Link>
 	 </li>
@@ -70,6 +74,7 @@
 	<Route path="/php"><PetHealth /></Route>
 	<Route path="/ea"><EnquiriesAppointments /></Route>
 	<Route path="/services"><Service /></Route>
+  <Route path="/acceuil"><Home /></Route>
 
 
   </div>
