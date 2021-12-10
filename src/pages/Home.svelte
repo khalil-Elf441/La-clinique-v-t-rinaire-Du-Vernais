@@ -1,3 +1,29 @@
+
+<!-- <h1>enquiries and appointments</h1> -->
+
+<script>
+  import Carousel from 'svelte-carousel'
+
+
+  const images = [
+      'https://image.freepik.com/free-vector/pet-shop-sale-banner-with-domestic-animals-dog-cat-zoo-store-flyer-discount-coupon-accessories-toys-supplies-vector-concept-vet-market-parrot-hamster-rabbit_102902-4970.jpg',
+      'https://image.freepik.com/free-vector/sale-banner-pet-shop-isometric-with-man-feeding-dog-near-dog-food-rack-with-text_1284-54089.jpg'
+  ]
+</script>
+
+
+<center>
+<Carousel
+  let:loaded
+>
+  {#each images as img}
+    <div class="img-container">
+        <img src="{img}" class="img-fluid" alt="promos" />
+    </div>
+  {/each}
+</Carousel>
+</center>
+
 <link
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
