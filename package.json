@@ -18,8 +18,11 @@
     "svelte": "^3.0.0"
   },
   "dependencies": {
+    "framework7": "^6.3.14",
     "sirv-cli": "^1.0.0",
+    "svelte-collapsible-card": "0.0.2",
     "svelte-navigator": "^3.1.5",
+    "svelte-read-more": "^0.2.1",
     "svelte-routing": "^1.6.0",
     "svelte-spa-router": "^3.2.0",
     "svelte-use-form": "^2.4.3"
