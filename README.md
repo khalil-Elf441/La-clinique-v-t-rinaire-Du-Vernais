@@ -4,6 +4,11 @@
 
 ---
 
+
+# La-clinique-v-t-rinaire-Du-Vernais
+
+Le version finale de l'application est dans la branch "develop"
+
 # svelte app
 
 This is a project template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/sveltejs/template.
@@ -107,4 +112,4 @@ Then, from within your project folder:
 npm run build
 surge public my-project.surge.sh
 ```
-# La-clinique-v-t-rinaire-Du-Vernais
+
