@@ -6,7 +6,6 @@
   import PetHealth from './pages/Pet_Health_Plan.svelte';
   import EnquiriesAppointments from './pages/enquiries_appointments.svelte';
   import Service from './pages/services.svelte';
-  import NotFound from './NotFound.svelte';
 
   import {Router, Route, Link} from 'svelte-navigator';
 
@@ -64,7 +63,7 @@
   </div>
 </Router>
 
-<style>
+ <style>
 	.box {background: linear-gradient(to left, #333, #333 50%, #eee 75%, #333 75%);  }
 </style>
 
