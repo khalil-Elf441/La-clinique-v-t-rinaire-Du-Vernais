@@ -59,7 +59,7 @@
 
 </script>
 
-
+{#if changeVue == false}
 <center>
 <Carousel
   let:loaded
@@ -81,7 +81,7 @@
 <!-- <input type="text" id="appt" name="appt">
 <input type="date" id="appt" name="appt">
 <input type="time" id="appt" name="appt"> -->
-{#if changeVue == false}
+
 <div class="input-group">
   <div class="input-group-prepend">
     <span class="input-group-text" id="basic-addon1">Doctor</span>
@@ -231,7 +231,75 @@
 </div>
 {/each}
 {:else}
-<h1> is between 5 and 10</h1> 
+<div class="container">
+  <div class="main-body">
+    <div class="row">
+      <div class="col-lg-4 center">
+        <div class="card">
+          <div class="card-body">
+            <div class="d-flex flex-column align-items-center text-center">
+              <img src="https://images.unsplash.com/photo-1508292549404-81fd946f8c2e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Admin" class="rounded-circle p-1 bg-primary" width="110">
+              <div class="mt-3">
+                <h4>Pet details </h4>
+                <p class="text-secondary mb-1">Sacha</p>
+                <p class="text-muted font-size-sm"> Avignon France</p>
+              </div>
+            </div>
+            <hr class="my-4">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+                <h6 class="mb-0"><svg xmlns="https://upload.wikimedia.org/wikipedia/commons/b/b5/Vector-kilogram_weight.svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-globe me-2 icon-inline"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>Wight</h6>
+                <span class="text-secondary">5Kg</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+                <h6 class="mb-0"><svg xmlns="https://u7.uidownload.com/vector/915/221/vector-whippet-race-dog-svg-eps.jpg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github me-2 icon-inline"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>Race</h6>
+                <span class="text-secondary">Aegean</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+                <h6 class="mb-0"><svg xmlns="https://www.svgrepo.com/show/139933/circular-line-with-word-age-in-the-center.svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter me-2 icon-inline text-info"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>Twitter</h6>
+                <span class="text-secondary">1 Year</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+                <h6 class="mb-0"><svg xmlns="https://cdn-icons-png.flaticon.com/512/2535/2535759.png" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram me-2 icon-inline text-danger"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>Vaccinated</h6>
+                <span class="text-secondary">up to date</span>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Vaccin</th>
+            <th scope="col">Liora</th>
+            <th scope="col">Tiora</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">First injection</th>
+            <td>✔️</td>
+            <td>✔️</td>
+          </tr>
+          <tr>
+            <th scope="row">Second injection</th>
+            <td>✔️</td>
+            <td>❌</td>
+          </tr>
+          <tr>
+            <th scope="row">Third Injection</th>
+            <td>✔️</td>
+            <td>❌</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      </div>
+      </div>
 {/if}
 
 
@@ -265,4 +333,10 @@
   .card-title {
     cursor: pointer;
   }
+  .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 </style>
