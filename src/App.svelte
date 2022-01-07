@@ -19,33 +19,27 @@
 </script>
 
 <Router {url}>
-  <nav class="navbar navbar-dark bg-dark">
-    <a class="navbar-brand" href="#"> CarringPets </a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-toggle="collapse"
-      data-target="#navbarText"
-      aria-controls="navbarText"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon" />
-    </button>
-    <div class="collapse navbar-collapse" id="navbarText">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <Link class="nav-link" to="/">Home</Link>
-        </li>
-        <li class="nav-item">
-          <Link class="nav-link" to="login">login</Link>
-        </li>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	
+
+    <a class="navbar-brand" href="/">
+    <img src="https://cdn-icons-png.flaticon.com/512/2138/2138440.png" width="40" height="40" alt="logo">
+    La clinique vétérinaire Du Vernais
+  </a>
+		<div class="collapse navbar-collapse" id="navbarNavDropdown">
+		  <ul class="navbar-nav">
         <!-- <li class="nav-item">
-          <Link class="nav-link" to="ea">Enquiries and appointments</Link>
+          <Link class="nav-link" to="/">Home</Link>
         </li> -->
-        <li class="nav-item">
-          <Link class="nav-link" to="php">Pet Health Plan</Link>
-        </li>
+        <!-- <li class="nav-item">
+          <Link class="nav-link" to="login">login</Link>
+        </li> -->
+        <!-- <li class="nav-item">
+          <Link class="nav-link" to="ea">enquiries and appointments</Link>
+        </li> -->
+		<li class="nav-item">
+			<Link class="nav-link" to="php">Pet Health Plan</Link>
+		  </li>
         <li class="nav-item">
           <Link class="nav-link" to="pa">Pet Advice</Link>
         </li>
@@ -53,16 +47,8 @@
           <Link class="nav-link" to="services">Services</Link>
         </li>
         <li class="nav-item">
-          <Link class="nav-link" to="contact">contact</Link>
+          <Link class="nav-link" to="contact">Contact us</Link>
         </li>
-        <li class="nav-item">
-          <Link class="nav-link" to="acceuil">Acceuil</Link>
-        </li>
-        <!-- <li class="nav-item">
-          <Link class="nav-link" to="AppointmentRegistred">AppointmentRegistred</Link>
-        </li> -->
-
-        
         <!-- <li class="nav-item active">
 	<Link to="login">login</Link>
 	 </li>
@@ -72,15 +58,15 @@
       </ul>
     </div>
   </nav>
-  <div class="box">
-    <Route path="/" component={ResultLogin} />
+  <!-- <div class="box"> -->
+    <!-- <Route path="/" component={ResultLogin} /> -->
     <Route path="/login" component={ResultLogin} />
     <Route path="/contact"><Contact /></Route>
     <Route path="/pa"><PetAdvice /></Route>
     <Route path="/php"><PetHealth /></Route>
     <Route path="/ea"><EnquiriesAppointments /></Route>
     <Route path="/services"><Service /></Route>
-    <Route path="/acceuil"><Home /></Route>
+    <Route path="/"><Home /></Route>
     <!-- <Route path="/AppointmentRegistred"><AppointmentRegistred /></Route> -->
-  </div>
+  <!-- </div> -->
 </Router>
