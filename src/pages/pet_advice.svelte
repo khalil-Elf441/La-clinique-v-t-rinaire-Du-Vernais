@@ -45,7 +45,7 @@
                         <img src={item.img} alt=""/>
                         <div class='titles'>
                             <h2>{ item.title }</h2>
-                            <ReadMore textContent={item.text} maxChars={10}/>
+                            <ReadMore textContent={item.text} maxChars={30}/>
                         </div>
                     </div>
                     

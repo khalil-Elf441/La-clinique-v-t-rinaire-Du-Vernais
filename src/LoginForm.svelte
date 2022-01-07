@@ -52,12 +52,19 @@
 <script>
 
 export let submit;
+import { setContext } from 'svelte';
+
 
   let email = "";
   let password = "";
   let isLoading = false;
   let isSuccess;
+  setContext('isSuccess', isSuccess)
+
   let errors = {};
+
+
+
   const handleSubmit = () => {
   errors = {};
   if (email.length === 0) {
@@ -78,6 +85,7 @@ export let submit;
         isLoading = false;
       });
   }
+  setContext('isSuccess', isSuccess)
 };
 
 
