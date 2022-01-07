@@ -45,14 +45,14 @@
   </TabList>
 
   <TabPanel>
-    <h2>First panel</h2>
+    <h2>Dog or puppy</h2>
   </TabPanel>
 
   <TabPanel>
-    <h2>Second panel</h2>
+    <h2>Cat or Kitten</h2>
   </TabPanel>
 
   <TabPanel>
-    <h2>Third panel</h2>
+    <h2>Rabbit</h2>
   </TabPanel>
 </Tabs>

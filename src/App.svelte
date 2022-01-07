@@ -40,9 +40,9 @@
         <li class="nav-item">
           <Link class="nav-link" to="login">login</Link>
         </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <Link class="nav-link" to="ea">Enquiries and appointments</Link>
-        </li>
+        </li> -->
         <li class="nav-item">
           <Link class="nav-link" to="php">Pet Health Plan</Link>
         </li>
