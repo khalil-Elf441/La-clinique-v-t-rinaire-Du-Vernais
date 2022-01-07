@@ -3,8 +3,11 @@
 
 <script>
   import Carousel from 'svelte-carousel'
-
-
+  let changeVue = false ;
+  function handleClick() {
+		alert('clicked');
+    changeVue = true ;
+	}
   const images = [
       'https://image.freepik.com/free-vector/pet-shop-sale-banner-with-domestic-animals-dog-cat-zoo-store-flyer-discount-coupon-accessories-toys-supplies-vector-concept-vet-market-parrot-hamster-rabbit_102902-4970.jpg',
       'https://image.freepik.com/free-vector/sale-banner-pet-shop-isometric-with-man-feeding-dog-near-dog-food-rack-with-text_1284-54089.jpg'
@@ -78,7 +81,7 @@
 <!-- <input type="text" id="appt" name="appt">
 <input type="date" id="appt" name="appt">
 <input type="time" id="appt" name="appt"> -->
-
+{#if changeVue == false}
 <div class="input-group">
   <div class="input-group-prepend">
     <span class="input-group-text" id="basic-addon1">Doctor</span>
@@ -208,6 +211,7 @@
 <!-- <button on:click={addToList}>Add</button> -->
 
 <br/>
+
 {#each todoList as item, index}
 	<!-- <br/> -->
   <div class="card">
@@ -216,17 +220,19 @@
     class="card-img-top"
     alt="Kitty"
   />
+ 
   <div class="card-body">
     <!-- <input bind:checked={item.status} type="checkbox"> -->
     <span class:checked={item.status}></span>
-    <h5 class="card-title">{item.name}</h5>
+    <h5 on:click={handleClick} class="card-title">{item.name}</h5>
     <p class="card-text">{item.type}</p>
     <span on:click={() => removeFromList(index)}>❌</span>
   </div>
 </div>
-
-{/each} 
-
+{/each}
+{:else}
+<h1> is between 5 and 10</h1> 
+{/if}
 
 
 
@@ -255,5 +261,8 @@
   }
   .card img {
     width: 30%;
+  }
+  .card-title {
+    cursor: pointer;
   }
 </style>
