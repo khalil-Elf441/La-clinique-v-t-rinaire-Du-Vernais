@@ -36,8 +36,6 @@
   </div>
 </div>
 
-
-
 <Tabs>
   <TabList>
     <Tab>Dog</Tab>
@@ -47,95 +45,76 @@
 
   <TabPanel>
     <h2>Dog or puppy</h2>
-    <p>Plus each year pick any 6 of the below additional treatments or savings:
+    <img
+      src="https://www.vets4pets.com/contentassets/082caeda92f2415c9c4a9859fa444bbe/vet-with-dog-1.jpg?width=534"
+      alt=""
+    />
+    <p>
+      Plus each year pick any 6 of the below additional treatments or savings:
     </p>
-        
-        <ul>
-          <li>£5 off consult
-        </li>
-          <li>Free nurse consult ††
-        </li>
-          <li>10% off neutering
-        </li>
-          <li> 10% off dental procedure
-            <li>£5 off consult
-            </li>
-              <li>10% off in-house laboratory work
 
-            </li>
-              <li>Microchip for only £10
-
-            </li>
-              <li> 30% off second flea and tick collar (if required)
-
-     
-        </ul>
-        
-    <img src="https://www.vets4pets.com/contentassets/082caeda92f2415c9c4a9859fa444bbe/vet-with-dog-1.jpg?width=534" alt=""/>
+    <ul>
+      <li>£5 off consult</li>
+      <li>Free nurse consult ††</li>
+      <li>10% off neutering</li>
+      <li>10% off dental procedure</li>
+      <li>£5 off consult</li>
+      <li>10% off in-house laboratory work</li>
+      <li>Microchip for only £10</li>
+      <li>30% off second flea and tick collar (if required)</li>
+    </ul>
   </TabPanel>
 
   <TabPanel>
-    <p>Plus each year pick any 6 of the below additional treatments or savings:
+    <p>
+      Plus each year pick any 6 of the below additional treatments or savings:
     </p>
     <h2>Cat or kitten</h2>
+    <img
+      src="https://www.vets4pets.com/contentassets/dc90454df0404b87bb161a68f40030d5/cat-vet-check2.jpg?width=534"
+      alt=""
+    />
 
-        <ul>
-          <li>£5 off consult
-        </li>
-          <li>Free nurse consult ††
-        </li>
-          <li>10% off neutering
-        </li>
-          <li> 10% off dental procedure
-            <li>£5 off consult
-            </li>
-              <li>10% off in-house laboratory work
-
-            </li>
-              <li>Microchip for only £10
-
-            </li>
-              <li> 30% off second flea and tick collar (if required)
-
-     
-        </ul>
-    <img src="https://www.vets4pets.com/contentassets/dc90454df0404b87bb161a68f40030d5/cat-vet-check2.jpg?width=534" alt=""/>
+    <ul>
+      <li>£5 off consult</li>
+      <li>Free nurse consult ††</li>
+      <li>10% off neutering</li>
+      <li>10% off dental procedure</li>
+      <li>£5 off consult</li>
+      <li>10% off in-house laboratory work</li>
+      <li>Microchip for only £10</li>
+      <li>30% off second flea and tick collar (if required)</li>
+    </ul>
   </TabPanel>
 
   <TabPanel>
     <h2>Rabbit</h2>
-    <p>Plus each year pick any 6 of the below additional treatments or savings:
+    <img
+      src="https://www.vets4pets.com/siteassets/advice/rabbit-in-practice2.jpg?width=534"
+      alt=""
+    />
+    <p>
+      Plus each year pick any 6 of the below additional treatments or savings:
     </p>
-        
-        <ul>
-          <li>£5 off consult
-        </li>
-          <li>Free nurse consult ††
-        </li>
-          <li>10% off neutering
-        </li>
-          <li> 10% off dental procedure
-            <li>£5 off consult
-            </li>
-              <li>10% off in-house laboratory work
 
-            </li>
-              <li>Microchip for only £10
-
-            </li>
-              <li> 30% off second flea and tick collar (if required)
-
-     
-        </ul>
-    <img src="https://www.vets4pets.com/siteassets/advice/rabbit-in-practice2.jpg?width=534" alt=""/>
+    <ul>
+      <li>£5 off consult</li>
+      <li>Free nurse consult ††</li>
+      <li>10% off neutering</li>
+      <li>10% off dental procedure</li>
+      <li>£5 off consult</li>
+      <li>10% off in-house laboratory work</li>
+      <li>Microchip for only £10</li>
+      <li>30% off second flea and tick collar (if required)</li>
+    </ul>
   </TabPanel>
 </Tabs>
 
 <style>
-	img {
-        display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-	}
-    </style>
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+</style>

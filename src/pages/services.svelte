@@ -3,22 +3,28 @@
 	
 	const items = [
 		{
-			title: 'Availablity',
+			title: 'Wellness Care',
 			subtitle: 'I am the first card',
-			img: 'https://www.doctolib.fr/webpack/e293c03bd4b367efb62c.svg',
-			text: 'Quickly access the availability of all the pet healthcare professionals'
+			img: 'https://cdn-icons-png.flaticon.com/512/5572/5572404.png',
+			text: 'Our wellness programs include: comprehensive physical exam; internal and external parasite testing.'
 		},
 		{
-			title: 'Accessibility',
+			title: 'Vaccination Care',
 			subtitle: 'I am the second card',
-			img: 'https://www.doctolib.fr/webpack/414f6d548cd8e7420ec2.svg',
-			text: 'Make informed decisions tailored to your health needs'
+			img: 'https://cdn-icons-png.flaticon.com/512/2358/2358553.png',
+			text: 'When a baby kitten or puppy is born, its immune system is not yet mature; the baby is wide open for infection.'
 		},
 		{
-			title: 'Professionalism',
+			title: 'Nutritional Counseling',
 			subtitle: 'I am the third card',
-			img: 'https://www.doctolib.fr/webpack/27df8684b01bff357f01.svg',
-			text: 'Find the appointment history and medical documents and Receive automatic reminders by SMS or email.'
+			img: 'https://cdn-icons-png.flaticon.com/512/2700/2700478.png',
+			text: 'Some pets require special prescription food and all pets benefit from a balanced diet.'
+		},
+        		{
+			title: 'Pain Management',
+			subtitle: 'I am the third card',
+			img: 'https://cdn-icons-png.flaticon.com/512/1049/1049390.png',
+			text: 'We understand that our patients feel pain and discomfort under the same circumstances as people do.'
 		}
 	]
 </script>
@@ -30,7 +36,7 @@
 			<CollapsibleCard>
 				
 				<div slot='header' class='header'>
-					<img src={item.img} alt=""/>
+					<img style="width:50%;height:50%;"src={item.img} alt=""/>
 					<div class='titles'>
 						<h2>{ item.title }</h2>
 						<p>{ item.text }</p>

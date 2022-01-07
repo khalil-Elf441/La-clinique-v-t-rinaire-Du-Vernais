@@ -19,6 +19,45 @@
 </script>
 
 <Router {url}>
+
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <a class="navbar-brand" href="/">
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/2138/2138440.png"
+        width="40"
+        height="40"
+        alt="logo"
+      /></a
+    >
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#collapsibleNavbar"
+    >
+      <span class="navbar-toggler-icon" />
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <Link class="nav-link" to="login">login</Link>
+        </li> 
+        <li class="nav-item">
+          <Link class="nav-link" to="php">Pet Health Plan</Link>
+        </li>
+        <li class="nav-item">
+          <Link class="nav-link" to="pa">Pet Advice</Link>
+        </li>
+        <li class="nav-item">
+          <Link class="nav-link" to="services">Services</Link>
+        </li>
+        <li class="nav-item">
+          <Link class="nav-link" to="contact">Contact us</Link>
+        </li>
+      </ul>
+    </div>
+  </nav>
+<!--   
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 	
 
@@ -28,7 +67,7 @@
   </a>
 		<div class="collapse navbar-collapse" id="navbarNavDropdown">
 		  <ul class="navbar-nav">
-        <!-- <li class="nav-item">
+         <li class="nav-item">
           <Link class="nav-link" to="/">Home</Link>
         </li> -->
         <!-- <li class="nav-item">
@@ -37,7 +76,7 @@
         <!-- <li class="nav-item">
           <Link class="nav-link" to="ea">enquiries and appointments</Link>
         </li> -->
-		<li class="nav-item">
+		<!-- <li class="nav-item">
 			<Link class="nav-link" to="php">Pet Health Plan</Link>
 		  </li>
         <li class="nav-item">
@@ -48,16 +87,16 @@
         </li>
         <li class="nav-item">
           <Link class="nav-link" to="contact">Contact us</Link>
-        </li>
+        </li> -->
         <!-- <li class="nav-item active">
 	<Link to="login">login</Link>
 	 </li>
 	<li class="nav-item active">
     <Link to="cas">spiner</Link>
 	</li> -->
-      </ul>
+      <!-- </ul>
     </div>
-  </nav>
+  </nav> --> 
   <!-- <div class="box"> -->
     <!-- <Route path="/" component={ResultLogin} /> -->
     <Route path="/login" component={ResultLogin} />
@@ -70,3 +109,11 @@
     <!-- <Route path="/AppointmentRegistred"><AppointmentRegistred /></Route> -->
   <!-- </div> -->
 </Router>
+
+<!-- <style>
+
+body{
+  padding: 0px;
+}
+
+</style> -->

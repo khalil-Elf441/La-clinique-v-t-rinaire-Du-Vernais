@@ -1,16 +1,27 @@
 
 
+<div class="container">
 
-<p class="lead">
+<div class="card">
+  <div class="card-body">
+    <blockquote class="blockquote mb-0">
+      <p class="lead">
   Pour prendre rendez-vous ou pour disposer d'informations, contactez-nous au 01.69.12.33.33.<br/>
 
-VETO N7<br/>
+       <strong>La clinique vétérinaire Du Vernais</strong><br/>
 
-80 avenue du Général de Gaulle<br/>
-91170 VIRY CHATILLON<br/>
-Tél: 01.69.12.33.33<br/>
-</p>
+        366 Av. de Labarthe,<br/>
+         31810 Vernet<br/>
+        Tél: 05 61 08 50 65<br/>
+        </p>
+    <!-- <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer> -->
+    </blockquote>
+  </div>
+</div>
 
+</div>
+
+<div class="container">
 <form>
   <div class="form-group">
     <label for="exampleInputEmail1">Your name</label>
@@ -30,3 +41,4 @@ Tél: 01.69.12.33.33<br/>
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
+</div>
