@@ -1,20 +1,21 @@
 <script>
-  import Carousel from './Carousel.svelte';
-  import ResultLogin from './ResultLogin.svelte';
-  import Contact from './pages/contact.svelte';
-  import PetAdvice from './pages/pet_advice.svelte';
-  import PetHealth from './pages/Pet_Health_Plan.svelte';
-  import EnquiriesAppointments from './pages/enquiries_appointments.svelte';
-  import Service from './pages/services.svelte';
-  import Home from './pages/Home.svelte'
-  import NotFound from './NotFound.svelte';
+  import Carousel from "./Carousel.svelte";
+  import ResultLogin from "./ResultLogin.svelte";
+  import Contact from "./pages/contact.svelte";
+  import PetAdvice from "./pages/pet_advice.svelte";
+  import PetHealth from "./pages/Pet_Health_Plan.svelte";
+  import EnquiriesAppointments from "./pages/enquiries_appointments.svelte";
+  import Service from "./pages/services.svelte";
+  import Home from "./pages/Home.svelte";
+   import AppointmentRegistred from "./pages/AppointmentRegistred.svelte";
+  import NotFound from "./NotFound.svelte";
 
-  import {Router, Route, Link} from 'svelte-navigator';
+  import { Router, Route, Link } from "svelte-navigator";
 
-  const submit = ({email, password}) =>
+  const submit = ({ email, password }) =>
     new Promise((resolve, reject) => setTimeout(resolve, 1000));
 
-  export let url = '';
+  export let url = "";
 </script>
 
 <Router {url}>
@@ -40,11 +41,11 @@
           <Link class="nav-link" to="login">login</Link>
         </li>
         <li class="nav-item">
-          <Link class="nav-link" to="ea">enquiries and appointments</Link>
+          <Link class="nav-link" to="ea">Enquiries and appointments</Link>
         </li>
-		<li class="nav-item">
-			<Link class="nav-link" to="php">Pet Health Plan</Link>
-		  </li>
+        <li class="nav-item">
+          <Link class="nav-link" to="php">Pet Health Plan</Link>
+        </li>
         <li class="nav-item">
           <Link class="nav-link" to="pa">Pet Advice</Link>
         </li>
@@ -57,6 +58,11 @@
         <li class="nav-item">
           <Link class="nav-link" to="acceuil">Acceuil</Link>
         </li>
+        <!-- <li class="nav-item">
+          <Link class="nav-link" to="AppointmentRegistred">AppointmentRegistred</Link>
+        </li> -->
+
+        
         <!-- <li class="nav-item active">
 	<Link to="login">login</Link>
 	 </li>
@@ -70,12 +76,11 @@
     <Route path="/" component={ResultLogin} />
     <Route path="/login" component={ResultLogin} />
     <Route path="/contact"><Contact /></Route>
-	<Route path="/pa"><PetAdvice /></Route>
-	<Route path="/php"><PetHealth /></Route>
-	<Route path="/ea"><EnquiriesAppointments /></Route>
-	<Route path="/services"><Service /></Route>
-  <Route path="/acceuil"><Home /></Route>
-
-
+    <Route path="/pa"><PetAdvice /></Route>
+    <Route path="/php"><PetHealth /></Route>
+    <Route path="/ea"><EnquiriesAppointments /></Route>
+    <Route path="/services"><Service /></Route>
+    <Route path="/acceuil"><Home /></Route>
+    <!-- <Route path="/AppointmentRegistred"><AppointmentRegistred /></Route> -->
   </div>
 </Router>
